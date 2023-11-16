@@ -7,7 +7,7 @@ public abstract class Pokemon {
     private static Random random = new Random();
     private String nom;
     private int niveau;
-    private int hp;
+    protected int hp;
     private int atk;
     private TypePokemon type;
 
@@ -51,10 +51,6 @@ public abstract class Pokemon {
 
     public String toString() {
         return "Nom : " + this.nom + " Niveau : " + this.niveau + " Attaque : " + this.atk + " HP : " + this.hp + " Type : " + this.type;
-    }
-
-    public void setHp(int hp) {
-        this.hp -= hp;
     }
 
     public void log(String msg) {

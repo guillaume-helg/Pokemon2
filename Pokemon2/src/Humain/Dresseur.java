@@ -1,6 +1,7 @@
 package Humain;
 
 import Objet.SacADos;
+import Pokemon.Pokemon;
 
 import java.util.Random;
 
@@ -16,7 +17,8 @@ public class Dresseur {
 
     public Dresseur(String nom) {
         this.nom = nom;
-        this.argent = argent;
+        this.argent = 0;
+        this.sacADos = new SacADos(this);
         nbDresseurs += 1;
     }
 
@@ -33,17 +35,19 @@ public class Dresseur {
     }
 
     public void prendreArgent(Dresseur d) {
-
+        this.argent += d.getArgent();
     }
 
     public void capturerPokemon() {
-        java.util.Random r = new Random();
-        this.sacADos.capturerPokemons(r.nextInt(0, 10));
+        this.sacADos.capturerPokemons();
+    }
+
+    public int getArgent() {
+        return this.getArgent();
     }
 
     public boolean peutCombattre() {
-        for
-        return ;
+        return this.sacADos.peutCombattre();
     }
 
     public void combattre(Dresseur d) {
@@ -51,7 +55,7 @@ public class Dresseur {
     }
 
     public void pokeCenter() {
-
+        this.pokeCenter();
     }
 
     @Override

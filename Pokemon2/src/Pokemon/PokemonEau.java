@@ -11,17 +11,16 @@ public class PokemonEau extends Pokemon {
         this.log(p.toString());
     }
 
-    @Override
     public void subir(Pokemon p) {
         switch (p.getType()) {
             case EAU, PLANTE:
-                this.setHp((int) (0.5*p.getAtk()));
+                this.hp -= ((int) (0.5 * p.getAtk()));
                 break;
             case FEU:
-                this.setHp(2 * p.getAtk());
+                this.hp -= (2 * p.getAtk());
                 break;
             default:
-                System.out.println("Bizarre bizarre");
+                this.hp -= (p.getAtk());
                 break;
         }
     }

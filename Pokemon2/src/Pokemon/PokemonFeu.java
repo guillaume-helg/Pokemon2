@@ -13,14 +13,14 @@ public class PokemonFeu extends Pokemon {
     @Override
     public void subir(Pokemon p) {
         switch (p.getType()) {
-            case TypePokemon.EAU, TypePokemon.PLANTE:
-                this.setHp((int) (0.5*p.getAtk()));
+            case EAU, PLANTE:
+                this.hp -= ((int) (0.5 * p.getAtk()));
                 break;
-            case TypePokemon.FEU:
-                this.setHp(2 * p.getAtk());
+            case FEU:
+                this.hp -= (2 * p.getAtk());
                 break;
             default:
-                System.out.println("Bizarre bizarre");
+                this.hp -= (p.getAtk());
                 break;
         }
     }

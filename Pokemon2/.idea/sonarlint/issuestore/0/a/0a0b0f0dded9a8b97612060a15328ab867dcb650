@@ -1,0 +1,26 @@
+
+t
+java:S1104
+"WMake nbDresseurs a static final constant or non-public and provide accessors if needed.(…ûˆù8š²×Ç½1
+t
+java:S1104"WMake nbParEquipe a static final constant or non-public and provide accessors if needed.(ÂĞàÓ8š²×Ç½1
+N
+java:S1444
+"1Make this "public static nbDresseurs" field final(…ûˆù8š²×Ç½1
+N
+java:S1444"1Make this "public static nbParEquipe" field final(ÂĞàÓ8š²×Ç½1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éñûÿÿÿÿ8œ²×Ç½1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷áÀÒøÿÿÿÿ8Ÿ²×Ç½1
+£
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºúÿÿÿÿÿ8Ÿ²×Ç½1
+£
+java:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª–åŒøÿÿÿÿ8Ÿ²×Ç½1
+E
+java:S3010"(Remove this assignment of "nbDresseurs".(ÚÈƒË8¢²×Ç½1
+[
+java:S3400F"9Remove this method and declare a constant for this value.(Ö§”Óşÿÿÿÿ8¥²×Ç½1
+R
+java:S1144"0Remove this unused private "choixEquipe" method.(÷áÀÒøÿÿÿÿ8¦²×Ç½1
+N
+java:S1144E",Remove this unused private "prefixe" method.(¦çê‚ıÿÿÿÿ8§²×Ç½1
