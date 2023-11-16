@@ -1,4 +1,5 @@
-import java.lang.reflect.Type;
+package Pokemon;
+
 import java.util.Random;
 
 public abstract class Pokemon {
@@ -49,7 +50,11 @@ public abstract class Pokemon {
     public abstract void subir(Pokemon p);
 
     public String toString() {
-        return "Nom : " + this.nom + " Niveau : " + this.niveau + " Attaque : " + this.atk + " HP : " + this.hp;
+        return "Nom : " + this.nom + " Niveau : " + this.niveau + " Attaque : " + this.atk + " HP : " + this.hp + " Type : " + this.type;
+    }
+
+    public void setHp(int hp) {
+        this.hp -= hp;
     }
 
     public void log(String msg) {
@@ -57,6 +62,6 @@ public abstract class Pokemon {
     }
 
     private String prefixe() {
-        return "";
+        return "[" + this.nom + "]";
     }
 }

@@ -1,3 +1,5 @@
+package Pokemon;
+
 import java.util.Random;
 
 public class Pokemon0 {
