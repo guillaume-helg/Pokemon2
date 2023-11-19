@@ -18,6 +18,10 @@ public abstract class Pokemon {
         this.atk = (this.niveau/2) + 1;
     }
 
+    protected void initNiveau(int niveau) {
+        this.niveau = niveau;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -48,6 +52,10 @@ public abstract class Pokemon {
 
     public abstract void attaquer(Pokemon p);
     public abstract void subir(Pokemon p);
+
+    protected void perdreVie(int dommage) {
+        this.hp -= dommage;
+    }
 
     public String toString() {
         return "Nom : " + this.nom + " Niveau : " + this.niveau + " Attaque : " + this.atk + " HP : " + this.hp + " Type : " + this.type;
